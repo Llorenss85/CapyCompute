@@ -123,6 +123,6 @@ main{
         min-width: 320px;
     }
     .articulo_producto>img{
-        max-width: 530px;
+        max-width: 380px;
     }
 }
