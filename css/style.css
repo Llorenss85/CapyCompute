@@ -116,13 +116,17 @@ main{
     }
     :root{
     --color_principal:black;
-    --sizeText:17px;
+    --sizeText:18px;
     --sizeTitulo:26px;
     }
     .seccion{
         min-width: 320px;
     }
+    .articulo_producto>p,.articulo_producto>h2 {
+        padding: 5px;
+    }
     .articulo_producto>img{
         max-width: 530px;
+        
     }
 }
