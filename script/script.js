@@ -30,10 +30,14 @@ function cambiarImg(arrayImg){
 }
 function clickEnVerMas(unBoton,unContenedor){
    unBoton.addEventListener("click", ()=> {
-     unContenedor.classList.add("jump")
-     console.log(unContenedor.classList)
-     setTimeout(()=>{
-      unContenedor.classList.remove("jump")
-     },1000)
+      //el contenedor dado, tomando sus hijos lo transformo en un array para poder manipularlo con forEach
+      // a cada elemento le agrego el salto.
+      Array.from(unContenedor.children).forEach(element => {
+         element.classList.add("jump")
+         console.log(element.classList)
+         setTimeout(()=>{
+            element.classList.remove("jump")
+         },1000)
+      }); 
    })
 }
