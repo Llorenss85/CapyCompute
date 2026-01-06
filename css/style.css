@@ -43,6 +43,8 @@ h3{
 .seccion{
     border-bottom: 1px black solid;
     min-width: 580px;
+    max-width: 900px;
+
     font-family: 'Inter', sans-serif;
     line-height: 1.72; 
     font-size: var(--sizeText);
@@ -147,7 +149,7 @@ main{
     }
     :root{
     --color_principal:black;
-    --sizeText:17.2px;
+    --sizeText:15.2px;
     --sizeTitulo:26px;
     }
     .seccion{
