@@ -149,7 +149,7 @@ main{
     }
     :root{
     --color_principal:black;
-    --sizeText:15.2px;
+    --sizeText:16.5px;
     --sizeTitulo:26px;
     }
     .seccion{
@@ -192,7 +192,7 @@ main{
 }
 @keyframes jump{
     from{
-        scale: 1.17;
+        scale: 1.2;
 
     }
     to{
