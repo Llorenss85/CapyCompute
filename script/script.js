@@ -8,25 +8,31 @@ document.addEventListener("DOMContentLoaded", ()=>{
    cambiarImg(carruselArray)
    clickEnVerMas(verMas,referido)
 })
-function cambiarImg(arrayImg){
-   setTimeout(()=>{
-      if(arrayImg[0].classList.value.includes("animar"))
+function delay(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms)); // una promesa desde cero que indica correcto cuando pasa el tiempo argumentado. 
+}
+async function cambiarImg(arrayImg){
+   while(true){
+   await delay(5500)
+   modificarImagen(arrayImg)
+   }
+}
+function modificarImagen(arrayimgs){
+      if(arrayimgs[0].classList.value.includes("animar"))
         {
-         arrayImg[0].classList.remove("animar")
-         arrayImg[0].classList.add("apagado")
+         arrayimgs[0].classList.remove("animar")
+         arrayimgs[0].classList.add("apagado")
 
-         arrayImg[1].classList.remove("apagado")
-         arrayImg[1].classList.add("animar")
+         arrayimgs[1].classList.remove("apagado")
+         arrayimgs[1].classList.add("animar")
         }
       else{
-         arrayImg[1].classList.remove("animar")
-         arrayImg[1].classList.add("apagado")
+         arrayimgs[1].classList.remove("animar")
+         arrayimgs[1].classList.add("apagado")
 
-         arrayImg[0].classList.remove("apagado")
-         arrayImg[0].classList.add("animar")
-      } cambiarImg(arrayImg)
-   }, 5500)
-   
+         arrayimgs[0].classList.remove("apagado")
+         arrayimgs[0].classList.add("animar")
+      } 
 }
 function clickEnVerMas(unBoton,unContenedor){
    unBoton.addEventListener("click", ()=> {
