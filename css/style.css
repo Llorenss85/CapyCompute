@@ -183,11 +183,12 @@ main{
     }
     :root{
     --color_principal:black;
-    --sizeText:16.5px;
+    --sizeText:18.5px;
     --sizeTitulo:26px;
     }
     .seccion{
         min-width: 350px;
+        padding: 15px;
     }
 
     .articulo_img{
