@@ -187,11 +187,9 @@ main{
     --sizeTitulo:26px;
     }
     .seccion{
-        width: 350px;
+        min-width: 350px;
     }
-    .articulo_producto{
 
-    }
     .articulo_img{
         display: flex;
         flex-direction: column;
@@ -209,6 +207,9 @@ main{
     .producto>img{
         width: 150px;
         height: 150px;
+    }
+    .bottom{
+
     }
 }
 
