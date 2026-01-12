@@ -7,6 +7,8 @@
     --sizeText:24px;
     --sizeTitulo:30px;
     --paddinContent:22psx;
+    --muestraSize:16px;
+    --mediaMuestraSize:13px
 }
 a{
     text-decoration: none;
@@ -115,11 +117,15 @@ main{
 }
 .producto>p{
     display: block;
+    line-height: normal;
+    padding-bottom: 15px;
     max-width: 185px;
 }
-.producto>p>span{
+.producto>p>span,.producto>p>a{
     display: flex;
-    
+    font-size: var(--muestraSize);
+    line-height: 1; 
+    padding-top: 3px;
 }
 /*articulos*/
 .seccion>h1{
@@ -219,9 +225,19 @@ main{
         max-height:350px ;
         
     }
+    .producto{
+        font-size: var(--muestraSize);
+    }
+    .producto>p{
+        display: flex;
+        flex-direction: column;
+    }
+    .producto>p>span{
+        font-size:var(--mediaMuestraSize)
+    }
     .producto>img{
-        width: 150px;
-        height: 150px;
+        width: 125px;
+        height: 125px;
     }
     .bottom{
 
