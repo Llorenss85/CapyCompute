@@ -7,7 +7,9 @@ document.addEventListener("DOMContentLoaded", ()=>{
    const arrayCarru =Array.from(carrusel)
    arrayCarruselImg(arrayCarru)
    clickEnVerMas(verMas,referido)
+   
 })
+
 function arrayCarruselImg(unArray){
    unArray.forEach(element => {
       const carruselArray=Array.from(element.children)   

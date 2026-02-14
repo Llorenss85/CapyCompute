@@ -16,8 +16,24 @@ a{
 h1{
         font-size: var(--sizeTitulo);
 }
+p,h3,h1{
+       word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+input,textarea{
+    width: 300px;
+}
+textarea{
+    resize:none;
+    height: 300px;
+}
 h3{
     font-size: var(--sizeText);
+}
+button{
+    padding: 3px;
+    margin:5px ;
+    border-radius: 5px;
 }
 /*particulares*/
 .nav{
@@ -64,6 +80,13 @@ h3{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+#main_admin{
+    display: flex;
+    flex-direction: row;
+}
+#preview_content{
+    height: 100%;
 }
 /**/
 .redes{
@@ -128,7 +151,7 @@ main{
     padding-top: 3px;
 }
 /*articulos*/
-.seccion>h1{
+.seccion>h1,.seccion>h2{
     text-align: center;
 }
 .animar{
@@ -139,7 +162,12 @@ main{
     max-width: 730px;
 }
 
-
+.centrar{
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    gap: 10px; 
+}
 .articulo_producto{
     display: flex;
     flex-direction: column;

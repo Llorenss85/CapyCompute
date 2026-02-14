@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="0cf137f8-884e-47c4-96fd-7c2d14f803c5"
+        type="text/javascript" async></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>CapyCompute</title>
+    <script src="script/app.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FFS0D9D88V"></script>
+    <meta name="google-site-verification" content="qGEEE4QMSTf4o1HCeqdVV0dbRswfMsl8Yqz0k2UbQms" />
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J8TV73RJ46"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-J8TV73RJ46');
+</script>
+
+<body>
+    <main id="main_admin">
+        <form class="seccion " id="login" method="POST">
+            <h2> Login</h2>
+            <div class="centrar">
+                <input placeholder="usuario" id="usuario" class="input" required>
+                <input placeholder="contraseña" type="password" id="password" class="input" required>
+            </div>
+            <button class="centrar" type="submit" id="enviar">Enviar</button>
+        </form>
+
+
+        <form id="panel" class="apagado" method="POST">
+
+            <div>
+                <label for="opciones">Tipo de producto</label>
+                <select name="opciones" id="opciones" size="1" class="input" required>
+                    <option value="procesadores">procesadoress</option>
+                    <option value="ram">ram</option>
+                    <option value="fuentes">fuentes</option>
+                    <option value="motherBoard">motherBoard</option>
+                </select>
+            </div>
+            <div>
+                <label for="nombre">Nombre del producto</label>
+                <input id="nombre" required></input>
+            </div>
+            <div>
+                <h3>titulo</h3>
+                <input data-pantalla="titulo" class="input"></input>
+            </div>
+            <div>
+                <h3> descripcion</h3>
+                <textarea data-pantalla="descripcion" class="input"></textarea>
+            </div>
+            <form id="panel" method="POST">
+                <div>
+                    <h3>SubTitulo</h3>
+                    <input data-pantalla="subTitulo" class="input"></input>
+                </div>
+                <div>
+                    <h3> descripcion</h3>
+                    <textarea data-pantalla="sub1Descripcion" class="input"></textarea>
+                </div>
+                <button type="submit">confirmar</button>
+            </form>
+            </section>
+            <aside id="preview_content">
+
+            </aside>
+
+    </main>
+</body>
+
+</html>
